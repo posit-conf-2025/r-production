@@ -3,7 +3,7 @@ WORKSHOP_TITLE
 
 ### posit::conf(2025)
 
-by Mine Çetinkaya-Rundel, and Charlotte Wickham
+by Hadley Wickham
 
 -----
 
