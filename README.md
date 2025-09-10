@@ -1,9 +1,8 @@
 # R in Production
 
-:spiral_calendar: Sept 16, 2025
-:alarm_clock:     09:00 - 17:00
-:hotel:           Regency VI
-
+:spiral_calendar: Sept 16, 2025  
+:alarm_clock:     09:00 - 17:00  
+:hotel:           Regency VI  
 
 ## Prework
 
