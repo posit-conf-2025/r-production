@@ -1,9 +1,12 @@
 name: render.yaml
+
 on:
   push:
     branches: main
+
 permissions:
   contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -19,15 +22,11 @@ jobs:
       # Install R packages from files/DESCRIPTION
       - uses: r-lib/actions/setup-r-dependencies@v2
 
-      # Install quarto
-      - uses: quarto-dev/quarto-actions/setup@v2
+      # Execute the script
+      - name: Run a script with a secret
+        run: Rscript scrape.R
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
-      # Render the quarto file into rmd/
-      - name: Render Rmarkdown
-        run: quarto render index.qmd --output-dir=html
-
-      # Publish rmd/ to GitHub pages
-      - name: Publish to GitHub pages 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
-        with:
-          folder: html
+      # Commit the changes back to this repo
+      - uses: stefanzweifel/git-auto-commit-action@v5

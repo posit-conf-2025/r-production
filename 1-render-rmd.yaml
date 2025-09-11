@@ -16,7 +16,7 @@ jobs:
         with:
           use-public-rspm: true
 
-      # Install R packages from description
+      # Install R packages from files/DESCRIPTION
       - uses: r-lib/actions/setup-r-dependencies@v2
 
       # Install pandoc
