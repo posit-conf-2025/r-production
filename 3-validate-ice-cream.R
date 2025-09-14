@@ -1,6 +1,7 @@
 library(dplyr)
 library(pointblank)
 
+# fmt: skip
 data <- tribble(
   ~date,         ~temperature,
   "2024-05-01",  64.4,

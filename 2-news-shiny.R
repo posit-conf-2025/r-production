@@ -28,7 +28,6 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-
   articles <- eventReactive(input$search, {
     get_news_articles(input$search_term, num_results = 10)
   })
@@ -38,7 +37,7 @@ server <- function(input, output, session) {
 
     article_list <- articles()$articles
 
-    if(length(article_list) == 0) {
+    if (length(article_list) == 0) {
       return(h3("No articles found."))
     }
 

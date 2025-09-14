@@ -1,7 +1,7 @@
 # Figure out which packages that would no longer be needed for each
 # of the dependencies in your package
 
-# Need dev pak for this 
+# Need dev pak for this
 # pak::pak("r-lib/pak")
 
 deps <- renv::dependencies()
@@ -14,6 +14,6 @@ needed <- function(pkgs) {
 
 all_pkgs <- needed(pkgs)
 
-pkgs |> 
+pkgs |>
   purrr::set_names() |>
   purrr::map(\(this_pkg) setdiff(all_pkgs, needed(setdiff(pkgs, this_pkg))))
