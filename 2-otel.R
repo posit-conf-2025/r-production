@@ -1,5 +1,5 @@
 # install instructions at https://raw.githubusercontent.com/schloerke/presentation-2025-09-17-posit-conf-otel/refs/heads/main/app.R
-Sys.setenv(OTEL_TRACES_EXPORTER="http")
+Sys.setenv(OTEL_TRACES_EXPORTER = "http")
 # Go to <https://logfire-us.pydantic.dev/hadley/otel-demo>
 
 # -- Set up chat tool calls ---------------------------------------------------
