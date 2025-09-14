@@ -43,7 +43,7 @@ This course is for you if you:
 
 -   Get frustrated debugging R code that's running on another computer.
 
--   Struggle keep your code running reliably as packages and data change over time.
+-   Struggle to keep your code running reliably as packages and data change over time.
 
 -   Want to generally improve the quality of your production code.
 
