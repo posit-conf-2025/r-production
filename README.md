@@ -12,6 +12,7 @@
 4. Sign up for a free GitHub account if you don't have one already.
 5. Sign up for a free [Posit Connect Cloud](https://connect.posit.cloud/) account.
 6. Sign up for a free [NewsAPI](https://newsapi.org) account.
+7. Join the [workshop Discord channel](https://discord.com/channels/1381993558437007490/1402378540577591487).
 
 ## Schedule
 
