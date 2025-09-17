@@ -22,11 +22,11 @@ jobs:
       # Install quarto
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # Render the quarto file into rmd/
-      - name: Render Rmarkdown
+      # Render the quarto file into html/
+      - name: Render
         run: quarto render index.qmd --output-dir=html
 
-      # Publish rmd/ to GitHub pages
+      # Publish html/ to GitHub pages
       - name: Publish to GitHub pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
